@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MyArchitect.Domain.Abstraction;
 
 namespace MyArchitect.Domain.Entities
 {
-    public class Category
+    public class Category : BaseEntity
     {
-        public int Id { get; set; }  
+        public Category()
+        {
+            Products = new List<Product>();
+        }
         public string Name { get; set; }
         public string Description { get; set; }
+        public IList<Product> Products { get; set; }
     }
 }

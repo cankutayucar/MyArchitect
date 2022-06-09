@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MyArchitect.Domain.Abstraction;
 
 namespace MyArchitect.Domain.Entities
 {
-    public class Product
+    public class Product : BaseEntity
     {
-        public int Id { get; set; }
+        public Product()
+        {
+            Category = new Category();
+        }
         public int CategoryId { get; set; }
         public string Name { get; set; }
         public int UnitInStock { get; set; }
+        public Category Category { get; set; }
     }
 }
