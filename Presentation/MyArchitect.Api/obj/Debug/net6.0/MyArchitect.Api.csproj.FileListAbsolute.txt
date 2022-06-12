@@ -69,3 +69,5 @@ C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.Api\obj
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.Api\obj\Debug\net6.0\ref\MyArchitect.Api.dll
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.Api\bin\Debug\net6.0\MyArchitect.RequestResponseModels.dll
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.Api\bin\Debug\net6.0\MyArchitect.RequestResponseModels.pdb
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

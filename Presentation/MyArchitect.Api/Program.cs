@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyArchitect.Abstraction.Repositories;
 using MyArchitect.Abstraction.Services;
+using MyArchitect.Concrete.Mappings;
 using MyArchitect.Concrete.Repositories;
 using MyArchitect.Concrete.Services;
 using MyArchitect.Persistence;
@@ -19,6 +20,7 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddAutoMapper(typeof(CategoryMapper), typeof(ProductMapper));
 #endregion 
 
 

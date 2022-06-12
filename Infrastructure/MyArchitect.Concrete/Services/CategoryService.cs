@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 using MyArchitect.Abstraction.Repositories;
 using MyArchitect.Abstraction.Services;
 using MyArchitect.RequestResponseModels.Category.GetAllCategories;
@@ -13,35 +9,23 @@ namespace MyArchitect.Concrete.Services
     public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository _categoryRepository;
-
-        public CategoryService(ICategoryRepository categoryRepository)
+        private readonly IMapper _mapper;
+        public CategoryService(ICategoryRepository categoryRepository, IMapper mapper)
         {
             _categoryRepository = categoryRepository;
+            _mapper = mapper;
         }
 
         public async Task<IEnumerable<CategoryResponseDto>> GetAllCategoriesAsync()
         {
             var categoriesEntity = await _categoryRepository.GetAllCategoriesAsync();
-            return categoriesEntity.Select(c => new CategoryResponseDto
-            {
-                CreateDate = c.CreateDate,
-                Description = c.Description,
-                Id = c.Id,
-                LastUpdate = c.LastUpdate,
-                Name = c.Name
-            });
+            return _mapper.Map<IEnumerable<CategoryResponseDto>>(categoriesEntity);
         }
 
         public async Task<IEnumerable<NameWithDescriptionResponseDto>> GetCategoriesNameWithDescriptionAsync()
         {
             var categoriesEntity = await _categoryRepository.GetAllCategoriesAsync();
-            return categoriesEntity.Select(c => new NameWithDescriptionResponseDto()
-            {
-                CreateDate = c.CreateDate,
-                Id = c.Id,
-                LastUpdate = c.LastUpdate,
-                NameWithDescription = $"{c.Name} - {c.Description}"
-            });
+            return _mapper.Map<IEnumerable<NameWithDescriptionResponseDto>>(categoriesEntity);
         }
     }
 }

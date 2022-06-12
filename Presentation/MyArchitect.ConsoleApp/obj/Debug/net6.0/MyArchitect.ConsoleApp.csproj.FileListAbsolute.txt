@@ -64,3 +64,5 @@ C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.Console
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.Abstraction.pdb
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.RequestResponseModels.dll
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.RequestResponseModels.pdb
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
