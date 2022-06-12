@@ -18,6 +18,7 @@ builder.Services.AddDbContext<OnionContext>(opt => opt.UseSqlServer(
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 #endregion 
 
 

@@ -27,7 +27,7 @@ namespace MyArchitect.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllCategoriesNameWithDescription()
         {
-            return Ok(await _categoryService.GetAllCategoriesAsync());
+            return Ok(await _categoryService.GetCategoriesNameWithDescriptionAsync());
         }
     }
 }

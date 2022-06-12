@@ -459,7 +459,8 @@
       },
       "MyArchitect.Abstraction/1.0.0": {
         "dependencies": {
-          "MyArchitect.Domain": "1.0.0"
+          "MyArchitect.Domain": "1.0.0",
+          "MyArchitect.RequestResponseModels": "1.0.0"
         },
         "runtime": {
           "MyArchitect.Abstraction.dll": {}
@@ -487,6 +488,11 @@
         },
         "runtime": {
           "MyArchitect.Persistence.dll": {}
+        }
+      },
+      "MyArchitect.RequestResponseModels/1.0.0": {
+        "runtime": {
+          "MyArchitect.RequestResponseModels.dll": {}
         }
       }
     }
@@ -793,6 +799,11 @@
       "sha512": ""
     },
     "MyArchitect.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyArchitect.RequestResponseModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

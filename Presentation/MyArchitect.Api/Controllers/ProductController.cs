@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyArchitect.Abstraction.Repositories;
+using MyArchitect.Abstraction.Services;
 
 namespace MyArchitect.Api.Controllers
 {
@@ -8,18 +9,18 @@ namespace MyArchitect.Api.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private  readonly  IProductRepository _productRepository;
+        private  readonly  IProductService _productService;
 
-        public ProductController(IProductRepository productRepository)
+        public ProductController(IProductService productService)
         {
-            _productRepository = productRepository;
+            _productService = productService;
         }
 
         [Route("get")]
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
-            return Ok(await _productRepository.GetAllProductsAsync());
+            return Ok(await _productService.GetAllProductAsync());
         }
     }
 }

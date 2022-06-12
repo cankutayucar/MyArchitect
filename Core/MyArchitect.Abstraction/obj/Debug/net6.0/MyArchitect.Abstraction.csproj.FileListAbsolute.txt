@@ -13,3 +13,5 @@ C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\refint\MyArchitect.Abstraction.dll
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.pdb
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\ref\MyArchitect.Abstraction.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\bin\Debug\net6.0\MyArchitect.RequestResponseModels.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\bin\Debug\net6.0\MyArchitect.RequestResponseModels.pdb

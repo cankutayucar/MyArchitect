@@ -1,0 +1,12 @@
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\bin\Debug\net6.0\MyArchitect.RequestResponseModels.deps.json
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\bin\Debug\net6.0\MyArchitect.RequestResponseModels.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\bin\Debug\net6.0\MyArchitect.RequestResponseModels.pdb
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\MyArchitect.RequestResponseModels.csproj.AssemblyReference.cache
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\MyArchitect.RequestResponseModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\MyArchitect.RequestResponseModels.AssemblyInfoInputs.cache
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\MyArchitect.RequestResponseModels.AssemblyInfo.cs
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\MyArchitect.RequestResponseModels.csproj.CoreCompileInputs.cache
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\MyArchitect.RequestResponseModels.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\refint\MyArchitect.RequestResponseModels.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\MyArchitect.RequestResponseModels.pdb
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.RequestResponseModels\obj\Debug\net6.0\ref\MyArchitect.RequestResponseModels.dll

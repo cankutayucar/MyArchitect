@@ -17,3 +17,5 @@ C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Infrastructure\MyArchitect.Concr
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Infrastructure\MyArchitect.Concrete\obj\Debug\net6.0\refint\MyArchitect.Concrete.dll
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Infrastructure\MyArchitect.Concrete\obj\Debug\net6.0\MyArchitect.Concrete.pdb
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Infrastructure\MyArchitect.Concrete\obj\Debug\net6.0\ref\MyArchitect.Concrete.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Infrastructure\MyArchitect.Concrete\bin\Debug\net6.0\MyArchitect.RequestResponseModels.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Infrastructure\MyArchitect.Concrete\bin\Debug\net6.0\MyArchitect.RequestResponseModels.pdb
