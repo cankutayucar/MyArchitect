@@ -4,7 +4,7 @@ using MyArchitect.Abstraction.Repositories;
 
 namespace MyArchitect.Api.Controllers
 {
-    [Route("api/Categories")]
+    [Route("api/categories")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
@@ -16,6 +16,7 @@ namespace MyArchitect.Api.Controllers
         }
 
         [Route("get")]
+        [HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {
             return Ok(await _categoryRepository.GetAllCategoriesAsync());
