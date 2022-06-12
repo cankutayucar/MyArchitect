@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "MyArchitect.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyArchitect.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyArchitect.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MyArchitect.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MyArchitect.Domain/MyArchitect.Domain.csproj",
+      "msbuildProject": "../MyArchitect.Domain/MyArchitect.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "MyArchitect.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\CAN\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.Domain\\MyArchitect.Domain.csproj": {
+              "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.Domain\\MyArchitect.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

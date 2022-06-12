@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\MyArchitect.Concrete\MyArchitect.Concrete.csproj" />
     <ProjectReference Include="..\..\Infrastructure\MyArchitect.Persistence\MyArchitect.Persistence.csproj" />
   </ItemGroup>
 

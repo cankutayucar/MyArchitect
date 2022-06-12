@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "MyArchitect.ConsoleApp/1.0.0": {
         "dependencies": {
+          "MyArchitect.Concrete": "1.0.0",
           "MyArchitect.Persistence": "1.0.0"
         },
         "runtime": {
@@ -456,6 +457,23 @@
           }
         }
       },
+      "MyArchitect.Abstraction/1.0.0": {
+        "dependencies": {
+          "MyArchitect.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MyArchitect.Abstraction.dll": {}
+        }
+      },
+      "MyArchitect.Concrete/1.0.0": {
+        "dependencies": {
+          "MyArchitect.Abstraction": "1.0.0",
+          "MyArchitect.Persistence": "1.0.0"
+        },
+        "runtime": {
+          "MyArchitect.Concrete.dll": {}
+        }
+      },
       "MyArchitect.Domain/1.0.0": {
         "runtime": {
           "MyArchitect.Domain.dll": {}
@@ -758,6 +776,16 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "MyArchitect.Abstraction/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyArchitect.Concrete/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MyArchitect.Domain/1.0.0": {
       "type": "project",

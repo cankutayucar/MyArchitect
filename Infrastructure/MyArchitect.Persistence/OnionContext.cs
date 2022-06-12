@@ -7,12 +7,11 @@ namespace MyArchitect.Persistence
     {
         public OnionContext(DbContextOptions<OnionContext> options) : base(options)
         {
-            Database.EnsureCreated();
         }
+
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
-
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region Category Mappings
@@ -27,6 +26,8 @@ namespace MyArchitect.Persistence
                 .Property(c => c.Description)
                 .IsRequired(false)
                 .HasColumnType("varchar(150)");
+            //modelBuilder.Entity<Category>().HasMany(c => c.Products).WithOne(p => p.Category)
+            //    .HasForeignKey(p => p.CategoryId);
             #endregion
 
             #region Product Mappings
@@ -45,8 +46,6 @@ namespace MyArchitect.Persistence
             modelBuilder.Entity<Product>()
                 .HasOne(p => p.Category).WithMany(c => c.Products).HasForeignKey(p => p.CategoryId);
             #endregion
-
-
         }
     }
 }

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\MyArchitect.Abstraction\MyArchitect.Abstraction.csproj" />
+    <ProjectReference Include="..\MyArchitect.Persistence\MyArchitect.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

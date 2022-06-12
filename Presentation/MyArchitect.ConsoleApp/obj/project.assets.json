@@ -595,6 +595,33 @@
           }
         }
       },
+      "MyArchitect.Abstraction/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MyArchitect.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyArchitect.Abstraction.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyArchitect.Abstraction.dll": {}
+        }
+      },
+      "MyArchitect.Concrete/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MyArchitect.Abstraction": "1.0.0",
+          "MyArchitect.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyArchitect.Concrete.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyArchitect.Concrete.dll": {}
+        }
+      },
       "MyArchitect.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1784,6 +1811,16 @@
         "version.txt"
       ]
     },
+    "MyArchitect.Abstraction/1.0.0": {
+      "type": "project",
+      "path": "../../Core/MyArchitect.Abstraction/MyArchitect.Abstraction.csproj",
+      "msbuildProject": "../../Core/MyArchitect.Abstraction/MyArchitect.Abstraction.csproj"
+    },
+    "MyArchitect.Concrete/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/MyArchitect.Concrete/MyArchitect.Concrete.csproj",
+      "msbuildProject": "../../Infrastructure/MyArchitect.Concrete/MyArchitect.Concrete.csproj"
+    },
     "MyArchitect.Domain/1.0.0": {
       "type": "project",
       "path": "../../Core/MyArchitect.Domain/MyArchitect.Domain.csproj",
@@ -1797,6 +1834,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "MyArchitect.Concrete >= 1.0.0",
       "MyArchitect.Persistence >= 1.0.0"
     ]
   },
@@ -1834,6 +1872,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Infrastructure\\MyArchitect.Concrete\\MyArchitect.Concrete.csproj": {
+              "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Infrastructure\\MyArchitect.Concrete\\MyArchitect.Concrete.csproj"
+            },
             "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Infrastructure\\MyArchitect.Persistence\\MyArchitect.Persistence.csproj": {
               "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Infrastructure\\MyArchitect.Persistence\\MyArchitect.Persistence.csproj"
             }

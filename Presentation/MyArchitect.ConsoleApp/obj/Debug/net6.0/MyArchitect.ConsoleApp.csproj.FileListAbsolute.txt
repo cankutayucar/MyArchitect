@@ -58,3 +58,7 @@ C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.Console
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\obj\Debug\net6.0\MyArchitect.ConsoleApp.pdb
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\obj\Debug\net6.0\MyArchitect.ConsoleApp.genruntimeconfig.cache
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\obj\Debug\net6.0\ref\MyArchitect.ConsoleApp.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.Abstraction.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.Concrete.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.Concrete.pdb
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.Abstraction.pdb

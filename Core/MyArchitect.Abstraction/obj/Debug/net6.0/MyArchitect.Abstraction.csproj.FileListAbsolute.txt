@@ -1,0 +1,15 @@
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\bin\Debug\net6.0\MyArchitect.Abstraction.deps.json
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\bin\Debug\net6.0\MyArchitect.Abstraction.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\bin\Debug\net6.0\MyArchitect.Abstraction.pdb
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\bin\Debug\net6.0\MyArchitect.Domain.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\bin\Debug\net6.0\MyArchitect.Domain.pdb
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.csproj.AssemblyReference.cache
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.AssemblyInfoInputs.cache
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.AssemblyInfo.cs
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.csproj.CoreCompileInputs.cache
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.csproj.CopyComplete
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\refint\MyArchitect.Abstraction.dll
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\MyArchitect.Abstraction.pdb
+C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Abstraction\obj\Debug\net6.0\ref\MyArchitect.Abstraction.dll
