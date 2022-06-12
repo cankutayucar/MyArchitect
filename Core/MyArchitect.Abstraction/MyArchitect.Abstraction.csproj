@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyArchitect.Domain\MyArchitect.Domain.csproj" />
+    <ProjectReference Include="..\MyArchitect.RequestResponseModels\MyArchitect.RequestResponseModels.csproj" />
   </ItemGroup>
 
 </Project>

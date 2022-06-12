@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyArchitect.Abstraction.Repositories;
+using MyArchitect.Abstraction.Services;
 
 namespace MyArchitect.Api.Controllers
 {
@@ -8,18 +9,25 @@ namespace MyArchitect.Api.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly ICategoryService _categoryService;
 
-        public CategoryController(ICategoryRepository categoryRepository)
+        public CategoryController(ICategoryService categoryService)
         {
-            _categoryRepository = categoryRepository;
+            _categoryService = categoryService;
         }
 
         [Route("get")]
         [HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {
-            return Ok(await _categoryRepository.GetAllCategoriesAsync());
+            return Ok(await _categoryService.GetAllCategoriesAsync());
+        }
+
+        [Route("name-with-description/get")]
+        [HttpGet]
+        public async Task<IActionResult> GetAllCategoriesNameWithDescription()
+        {
+            return Ok(await _categoryService.GetAllCategoriesAsync());
         }
     }
 }

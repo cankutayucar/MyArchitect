@@ -599,7 +599,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "MyArchitect.Domain": "1.0.0"
+          "MyArchitect.Domain": "1.0.0",
+          "MyArchitect.RequestResponseModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MyArchitect.Abstraction.dll": {}
@@ -631,6 +632,16 @@
         },
         "runtime": {
           "bin/placeholder/MyArchitect.Persistence.dll": {}
+        }
+      },
+      "MyArchitect.RequestResponseModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyArchitect.RequestResponseModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyArchitect.RequestResponseModels.dll": {}
         }
       }
     }
@@ -1811,6 +1822,11 @@
       "type": "project",
       "path": "../MyArchitect.Persistence/MyArchitect.Persistence.csproj",
       "msbuildProject": "../MyArchitect.Persistence/MyArchitect.Persistence.csproj"
+    },
+    "MyArchitect.RequestResponseModels/1.0.0": {
+      "type": "project",
+      "path": "../../Core/MyArchitect.RequestResponseModels/MyArchitect.RequestResponseModels.csproj",
+      "msbuildProject": "../../Core/MyArchitect.RequestResponseModels/MyArchitect.RequestResponseModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

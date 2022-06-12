@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using MyArchitect.Abstraction.Repositories;
+using MyArchitect.Abstraction.Services;
 using MyArchitect.Concrete.Repositories;
+using MyArchitect.Concrete.Services;
 using MyArchitect.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,7 @@ builder.Services.AddDbContext<OnionContext>(opt => opt.UseSqlServer(
     "Data Source=DESKTOP-5QUPQUE\\SQLEXPRESS;Initial Catalog=OnionArchitect;Integrated Security=true;"));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 #endregion 
 
 

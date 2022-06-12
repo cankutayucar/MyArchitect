@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/MyArchitect.Domain.dll": {}
         }
+      },
+      "MyArchitect.RequestResponseModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyArchitect.RequestResponseModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyArchitect.RequestResponseModels.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../MyArchitect.Domain/MyArchitect.Domain.csproj",
       "msbuildProject": "../MyArchitect.Domain/MyArchitect.Domain.csproj"
+    },
+    "MyArchitect.RequestResponseModels/1.0.0": {
+      "type": "project",
+      "path": "../MyArchitect.RequestResponseModels/MyArchitect.RequestResponseModels.csproj",
+      "msbuildProject": "../MyArchitect.RequestResponseModels/MyArchitect.RequestResponseModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "MyArchitect.Domain >= 1.0.0"
+      "MyArchitect.Domain >= 1.0.0",
+      "MyArchitect.RequestResponseModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -62,6 +78,9 @@
           "projectReferences": {
             "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.Domain\\MyArchitect.Domain.csproj": {
               "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.Domain\\MyArchitect.Domain.csproj"
+            },
+            "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.RequestResponseModels\\MyArchitect.RequestResponseModels.csproj": {
+              "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.RequestResponseModels\\MyArchitect.RequestResponseModels.csproj"
             }
           }
         }
