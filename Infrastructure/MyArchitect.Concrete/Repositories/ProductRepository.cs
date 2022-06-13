@@ -5,23 +5,10 @@ using MyArchitect.Persistence;
 
 namespace MyArchitect.Concrete.Repositories
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository :Repository<Product>,IProductRepository
     {
-        private readonly OnionContext _context;
-
-        public ProductRepository(OnionContext context)
+        public ProductRepository(OnionContext context) : base(context)
         {
-            _context = context;
-        }
-
-        public async Task<IEnumerable<Product>> GetAllProductsAsync()
-        {
-            return await _context.Products.ToListAsync();
-        }
-
-        public async Task<Product> GetByIdAsync(int id)
-        {
-           return await _context.Products.FirstOrDefaultAsync(p => p.Id == id) ?? new Product();
         }
     }
 }

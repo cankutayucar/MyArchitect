@@ -5,23 +5,11 @@ using MyArchitect.Persistence;
 
 namespace MyArchitect.Concrete.Repositories
 {
-    public class CategoryRepository : ICategoryRepository
+    public class CategoryRepository :Repository<Category>, ICategoryRepository
     {
-        private readonly OnionContext  _context;
 
-        public CategoryRepository(OnionContext context)
+        public CategoryRepository(OnionContext context) : base(context)
         {
-            _context = context;
-        }
-
-        public async Task<IEnumerable<Category>> GetAllCategoriesAsync()
-        {
-            return await _context.Categories.ToListAsync();
-        }
-
-        public async Task<Category> GetByIdAsync(int id)
-        {
-            return await _context.Categories.FirstOrDefaultAsync(c => c.Id == id) ?? new Category();
         }
     }
 }

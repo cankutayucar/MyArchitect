@@ -8,7 +8,7 @@ namespace MyArchitect.Concrete.Repositories
     public class Repository<T> : IRepository<T>
         where T : class
     {
-        private readonly OnionContext _context;
+        internal readonly OnionContext _context;
 
         public Repository(OnionContext context)
         {

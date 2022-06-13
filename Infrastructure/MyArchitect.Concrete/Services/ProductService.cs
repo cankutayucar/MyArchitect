@@ -7,7 +7,7 @@ namespace MyArchitect.Concrete.Services
 {
     public class ProductService : IProductService
     {
-        private readonly  IProductRepository _repository;
+        private readonly IProductRepository _repository;
         private readonly IMapper _mapper;
 
         public ProductService(IProductRepository repository, IMapper mapper)
@@ -18,13 +18,13 @@ namespace MyArchitect.Concrete.Services
 
         public async Task<IEnumerable<GetAllProductDto>> GetAllProductAsync()
         {
-            var productsEntity = await _repository.GetAllProductsAsync();
+            var productsEntity = await _repository.GetAllAsync();
             return _mapper.Map<IEnumerable<GetAllProductDto>>(productsEntity);
         }
 
         public async Task<GetAllProductDto> GetProductByIdAsync(int id)
         {
-            return _mapper.Map<GetAllProductDto>(await _repository.GetByIdAsync(id));
+            return _mapper.Map<GetAllProductDto>(await _repository.GetAsync(id));
         }
     }
 }

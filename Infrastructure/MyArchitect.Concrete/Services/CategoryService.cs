@@ -18,19 +18,19 @@ namespace MyArchitect.Concrete.Services
 
         public async Task<IEnumerable<CategoryResponseDto>> GetAllCategoriesAsync()
         {
-            var categoriesEntity = await _categoryRepository.GetAllCategoriesAsync();
+            var categoriesEntity = await _categoryRepository.GetAllAsync();
             return _mapper.Map<IEnumerable<CategoryResponseDto>>(categoriesEntity);
         }
 
         public async Task<IEnumerable<NameWithDescriptionResponseDto>> GetCategoriesNameWithDescriptionAsync()
         {
-            var categoriesEntity = await _categoryRepository.GetAllCategoriesAsync();
+            var categoriesEntity = await _categoryRepository.GetAllAsync();
             return _mapper.Map<IEnumerable<NameWithDescriptionResponseDto>>(categoriesEntity);
         }
 
         public async Task<CategoryResponseDto> GetCategoryByIdAsync(int id)
         {
-            return _mapper.Map<CategoryResponseDto>(await _categoryRepository.GetByIdAsync(id));
+            return _mapper.Map<CategoryResponseDto>(await _categoryRepository.GetAsync(id));
         }
     }
 }
