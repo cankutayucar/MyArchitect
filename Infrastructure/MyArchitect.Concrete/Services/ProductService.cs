@@ -21,5 +21,10 @@ namespace MyArchitect.Concrete.Services
             var productsEntity = await _repository.GetAllProductsAsync();
             return _mapper.Map<IEnumerable<GetAllProductDto>>(productsEntity);
         }
+
+        public async Task<GetAllProductDto> GetProductByIdAsync(int id)
+        {
+            return _mapper.Map<GetAllProductDto>(await _repository.GetByIdAsync(id));
+        }
     }
 }

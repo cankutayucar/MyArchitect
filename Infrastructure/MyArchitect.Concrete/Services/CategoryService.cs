@@ -27,5 +27,10 @@ namespace MyArchitect.Concrete.Services
             var categoriesEntity = await _categoryRepository.GetAllCategoriesAsync();
             return _mapper.Map<IEnumerable<NameWithDescriptionResponseDto>>(categoriesEntity);
         }
+
+        public async Task<CategoryResponseDto> GetCategoryByIdAsync(int id)
+        {
+            return _mapper.Map<CategoryResponseDto>(await _categoryRepository.GetByIdAsync(id));
+        }
     }
 }

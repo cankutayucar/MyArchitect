@@ -1,6 +1,4 @@
-﻿
-
-using MyArchitect.RequestResponseModels.Category.GetAllCategories;
+﻿using MyArchitect.RequestResponseModels.Category.GetAllCategories;
 using MyArchitect.RequestResponseModels.Category.GetCategoriesNameWithDescription;
 
 namespace MyArchitect.Abstraction.Services
@@ -9,5 +7,6 @@ namespace MyArchitect.Abstraction.Services
     {
         Task<IEnumerable<CategoryResponseDto>> GetAllCategoriesAsync();
         Task<IEnumerable<NameWithDescriptionResponseDto>> GetCategoriesNameWithDescriptionAsync();
+        Task<CategoryResponseDto> GetCategoryByIdAsync(int id);
     }
 }

@@ -18,5 +18,10 @@ namespace MyArchitect.Concrete.Repositories
         {
             return await _context.Categories.ToListAsync();
         }
+
+        public async Task<Category> GetByIdAsync(int id)
+        {
+            return await _context.Categories.FirstOrDefaultAsync(c => c.Id == id) ?? new Category();
+        }
     }
 }

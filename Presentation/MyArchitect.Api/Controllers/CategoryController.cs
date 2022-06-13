@@ -29,5 +29,12 @@ namespace MyArchitect.Api.Controllers
         {
             return Ok(await _categoryService.GetCategoriesNameWithDescriptionAsync());
         }
+
+        [Route("get/{id}")]
+        [HttpGet]
+        public async Task<IActionResult> GetById(int id)
+        {
+            return Ok(await _categoryService.GetCategoryByIdAsync(id));
+        }
     }
 }

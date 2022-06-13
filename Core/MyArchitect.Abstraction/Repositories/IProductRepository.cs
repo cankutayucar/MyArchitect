@@ -10,5 +10,6 @@ namespace MyArchitect.Abstraction.Repositories
     public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetAllProductsAsync();
+        Task<Product> GetByIdAsync(int id);
     }
 }

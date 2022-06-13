@@ -22,5 +22,12 @@ namespace MyArchitect.Api.Controllers
         {
             return Ok(await _productService.GetAllProductAsync());
         }
+        
+        [Route("get/{id}")]
+        [HttpGet]
+        public async Task<IActionResult> GetById(int id)
+        {
+            return Ok(await _productService.GetProductByIdAsync(id));
+        }
     }
 }
