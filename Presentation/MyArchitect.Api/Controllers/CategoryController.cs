@@ -5,7 +5,7 @@ using MyArchitect.Abstraction.Services;
 
 namespace MyArchitect.Api.Controllers
 {
-    [Route("api/categories")]
+    [Route("api/category")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
