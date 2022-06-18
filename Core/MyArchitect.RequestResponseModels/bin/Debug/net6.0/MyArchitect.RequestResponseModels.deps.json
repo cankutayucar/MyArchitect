@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "MyArchitect.RequestResponseModels/1.0.0": {
+        "dependencies": {
+          "MyArchitect.Domain": "1.0.0"
+        },
         "runtime": {
           "MyArchitect.RequestResponseModels.dll": {}
+        }
+      },
+      "MyArchitect.Domain/1.0.0": {
+        "runtime": {
+          "MyArchitect.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "MyArchitect.RequestResponseModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyArchitect.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

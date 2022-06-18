@@ -160,7 +160,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.Domain\\MyArchitect.Domain.csproj": {
+                "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.Domain\\MyArchitect.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
