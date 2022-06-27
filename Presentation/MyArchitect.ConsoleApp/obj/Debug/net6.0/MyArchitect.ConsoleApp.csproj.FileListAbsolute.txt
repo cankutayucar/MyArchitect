@@ -134,3 +134,6 @@ C:\Users\Cankutay\Desktop\Structure\MyArchitect\Presentation\MyArchitect.Console
 C:\Users\Cankutay\Desktop\Structure\MyArchitect\Presentation\MyArchitect.ConsoleApp\obj\Debug\net6.0\MyArchitect.ConsoleApp.pdb
 C:\Users\Cankutay\Desktop\Structure\MyArchitect\Presentation\MyArchitect.ConsoleApp\obj\Debug\net6.0\MyArchitect.ConsoleApp.genruntimeconfig.cache
 C:\Users\Cankutay\Desktop\Structure\MyArchitect\Presentation\MyArchitect.ConsoleApp\obj\Debug\net6.0\ref\MyArchitect.ConsoleApp.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.Utils.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Presentation\MyArchitect.ConsoleApp\bin\Debug\net6.0\MyArchitect.Utils.pdb

@@ -53,12 +53,12 @@ namespace MyArchitect.Concrete.Services
             if (insertResult)
             {
                 return new Response<int>()
-                    { Result = categoryEntity.Id, Success = true, Message = "Kategori başarıyla eklendi" };
+                { Result = categoryEntity.Id, Success = true, Message = "Kategori başarıyla eklendi" };
             }
             else
             {
                 return new Response<int>()
-                    { Result = categoryEntity.Id, Success = false, Message = "Kategori eklenemedi" };
+                { Result = categoryEntity.Id, Success = false, Message = "Kategori eklenemedi" };
             }
         }
 
@@ -67,14 +67,31 @@ namespace MyArchitect.Concrete.Services
             var result = await _categoryRepository.GetAsync(id);
             if (result == null)
             {
-                return false;
+                return new Response<bool>()
+                { Success = false, Message = "verilen kriterlere uygun bir kategori bulunamadı" };
             }
-            return await _categoryRepository.UpdateAsync(_mapper.Map(dto, result));
+            var resultSuccess = await _categoryRepository.UpdateAsync(_mapper.Map(dto, result));
+            if (resultSuccess)
+            {
+                return new Response<bool>() { Success = true, Message = "Kategori başarıyla güncellendi" };
+            }
+            else
+            {
+                return new Response<bool>() { Success = false, Message = "kategori güncellenemedi" };
+            }
         }
 
         public async Task<Response<bool>> DeleteCategoryAsync(object id)
         {
-            return await _categoryRepository.DeleteAsync(id);
+            var result = await _categoryRepository.DeleteAsync(id);
+            if (result)
+            {
+                return new Response<bool>() { Success = true, Message = "Kategori başarıyla silindi" };
+            }
+            else
+            {
+                return new Response<bool>() { Success = false, Message = "kategori silinemedi" };
+            }
         }
     }
 }

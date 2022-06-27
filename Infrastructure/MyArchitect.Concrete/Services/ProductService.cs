@@ -3,6 +3,7 @@ using FluentValidation;
 using MyArchitect.Abstraction.Repositories;
 using MyArchitect.Abstraction.Services;
 using MyArchitect.Domain.Entities;
+using MyArchitect.RequestResponseModels;
 using MyArchitect.RequestResponseModels.Product.CreateProduct;
 using MyArchitect.RequestResponseModels.Product.GetAllProducts;
 using MyArchitect.RequestResponseModels.Product.UpdateProduct;
@@ -32,22 +33,50 @@ namespace MyArchitect.Concrete.Services
             return _mapper.Map<GetAllProductDto>(await _repository.GetAsync(id));
         }
 
-        public async Task<int> InsertProductAsync(CreateProductDto dto)
+        public async Task<Response<int>> InsertProductAsync(CreateProductDto dto)
         {
-            return (await _repository.InsertAsync(_mapper.Map<Product>(dto))) == null ? 0 : 1;
+            var product = _mapper.Map<Product>(dto);
+            var result = await _repository.InsertAsync(product);
+            if (result)
+            {
+                return new Response<int>() { Success = true, Message = "ürün basarıyla eklendi",Result = product.Id};
+            }
+            else
+            {
+                return new Response<int>() { Success = false, Message = "ürün eklenemedi" };
+            }
         }
 
-        public async Task<bool> UpdateProductAsync(object id, UpdateProductDto dto)
+        public async Task<Response<bool>> UpdateProductAsync(object id, UpdateProductDto dto)
         {
             var product = await _repository.GetAsync(id);
+
             if (product == null)
-                return false;
-            return await _repository.UpdateAsync(_mapper.Map(dto, product));
+                return new Response<bool>() { Success = false, Message = "ürün bulunamadı" };
+
+            var result = await _repository.UpdateAsync(_mapper.Map(dto, product));
+
+            if (result)
+            {
+                return new Response<bool>() { Success = true, Message = "ürün basarıyla güncellendi" };
+            }
+            else
+            {
+                return new Response<bool>() { Success = false, Message = "ürün güncellenemedi" };
+            }
         }
 
-        public async Task<bool> DeleteProductAsync(object id)
+        public async Task<Response<bool>> DeleteProductAsync(object id)
         {
-            return await _repository.DeleteAsync(id);
+            var result =  await _repository.DeleteAsync(id);
+            if (result)
+            {
+                return new Response<bool>() { Success = true, Message = "ürün basarıyla silindi" };
+            }
+            else
+            {
+                return new Response<bool>() { Success = false, Message = "ürün silinemedi" };
+            }
         }
     }
 }

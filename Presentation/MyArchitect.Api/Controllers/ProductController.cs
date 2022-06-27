@@ -37,7 +37,7 @@ namespace MyArchitect.Api.Controllers
         public async Task<IActionResult> Create([FromBody] CreateProductDto dto)
         {
             var result = await _productService.InsertProductAsync(dto);
-            return result != 0 ? Ok() : BadRequest(result);
+            return result.Success ? Ok(result.Message) : BadRequest(result.Message);
         }
 
         [Route("update/{id}")]
@@ -45,7 +45,7 @@ namespace MyArchitect.Api.Controllers
         public async Task<IActionResult> Update([FromQuery] int id, [FromBody] UpdateProductDto dto)
         {
             var result = await _productService.UpdateProductAsync(id, dto);
-            return result ? Ok() : BadRequest(result);
+            return result.Result ? Ok(result.Message) : BadRequest(result.Message);
         }
 
         [Route("delete/{id}")]
@@ -53,7 +53,7 @@ namespace MyArchitect.Api.Controllers
         public async Task<IActionResult> Delete([FromQuery] int id)
         {
             var result = await _productService.DeleteProductAsync(id);
-            return result ? Ok() : BadRequest(result);
+            return result.Success ? Ok(result.Message) : BadRequest(result.Message);
         }
     }
 }

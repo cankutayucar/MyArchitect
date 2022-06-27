@@ -44,7 +44,7 @@ namespace MyArchitect.Api.Controllers
         public async Task<IActionResult> Create(CreateCategoryDto category)
         {
             var result = await _categoryService.CreateCategoryAsync(category);
-            return result != 0 ? Ok(result) : BadRequest(result);
+            return result.Success ? Ok(result.Message) : BadRequest(result.Message);
         }
 
         [Route("update/{id}")]
@@ -52,7 +52,7 @@ namespace MyArchitect.Api.Controllers
         public async Task<IActionResult> Update([FromQuery] int id, [FromBody] UpdateCategoryDto category)
         {
             var result = await _categoryService.UpdateCategoryAsync(id, category);
-            return result ? Ok(result) : BadRequest(result);
+            return result.Success ? Ok(result.Message) : BadRequest(result.Message);
         }
 
         [Route("delete/{id}")]
@@ -60,7 +60,7 @@ namespace MyArchitect.Api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _categoryService.DeleteCategoryAsync(id);
-            return result ? Ok(result) : BadRequest(result);
+            return result.Success ? Ok(result.Message) : BadRequest(result.Message);
         }
     }
 }
