@@ -1,9 +1,11 @@
-﻿using AutoMapper;
+﻿using System.Net.Http.Headers;
+using AutoMapper;
 using FluentValidation;
 using FluentValidation.Results;
 using MyArchitect.Abstraction.Repositories;
 using MyArchitect.Abstraction.Services;
 using MyArchitect.Domain.Entities;
+using MyArchitect.RequestResponseModels;
 using MyArchitect.RequestResponseModels.Category.CreateCategory;
 using MyArchitect.RequestResponseModels.Category.GetAllCategories;
 using MyArchitect.RequestResponseModels.Category.GetCategoriesNameWithDescription;
@@ -41,24 +43,36 @@ namespace MyArchitect.Concrete.Services
             return _mapper.Map<CategoryResponseDto>(await _categoryRepository.GetAsync(id));
         }
 
-        public async Task<int> CreateCategoryAsync(CreateCategoryDto dto)
+        public async Task<Response<int>> CreateCategoryAsync(CreateCategoryDto dto)
         {
             var result = await _validator.ValidateAsync(dto);
-            if (!result.IsValid) throw new Exception(result.Errors.ParsValidationErrors());
-            return await _categoryRepository.InsertAsync(_mapper.Map<Category>(dto)) == true ? 1 : 0;
+            if (!result.IsValid)
+                return new Response<int>() { Success = false, Message = result.Errors.ParsValidationErrors() };
+            var categoryEntity = _mapper.Map<Category>(dto);
+            var insertResult = await _categoryRepository.InsertAsync(categoryEntity);
+            if (insertResult)
+            {
+                return new Response<int>()
+                    { Result = categoryEntity.Id, Success = true, Message = "Kategori başarıyla eklendi" };
+            }
+            else
+            {
+                return new Response<int>()
+                    { Result = categoryEntity.Id, Success = false, Message = "Kategori eklenemedi" };
+            }
         }
 
-        public async Task<bool> UpdateCategoryAsync(object id, UpdateCategoryDto dto)
+        public async Task<Response<bool>> UpdateCategoryAsync(object id, UpdateCategoryDto dto)
         {
             var result = await _categoryRepository.GetAsync(id);
             if (result == null)
             {
                 return false;
             }
-            return await _categoryRepository.UpdateAsync(_mapper.Map(dto,result));
+            return await _categoryRepository.UpdateAsync(_mapper.Map(dto, result));
         }
 
-        public async Task<bool> DeleteCategoryAsync(object id)
+        public async Task<Response<bool>> DeleteCategoryAsync(object id)
         {
             return await _categoryRepository.DeleteAsync(id);
         }

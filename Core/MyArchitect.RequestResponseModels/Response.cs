@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyArchitect.RequestResponseModels
 {
-    public class Response
+    public class Response<T>
     {
         public bool Success { get; set; }
         public string Message { get; set; }
-        public object Result { get; set; }  
+        public T Result { get; set; }  
     }
 }
