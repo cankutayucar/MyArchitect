@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "j1AbanCJLkky5O/RXoGAyv9wD6zLdsBQF5nDkB28GKqvA8dSGalxWOGbK2ocnNsoQn+k4kHBUbpNPFMDFneNDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Core\\MyArchitect.Utils\\MyArchitect.Utils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cankutay\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

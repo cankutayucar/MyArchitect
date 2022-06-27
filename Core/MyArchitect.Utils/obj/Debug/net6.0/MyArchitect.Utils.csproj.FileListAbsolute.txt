@@ -1,0 +1,12 @@
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\bin\Debug\net6.0\MyArchitect.Utils.deps.json
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\bin\Debug\net6.0\MyArchitect.Utils.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\bin\Debug\net6.0\MyArchitect.Utils.pdb
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\MyArchitect.Utils.csproj.AssemblyReference.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\MyArchitect.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\MyArchitect.Utils.AssemblyInfoInputs.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\MyArchitect.Utils.AssemblyInfo.cs
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\MyArchitect.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\MyArchitect.Utils.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\refint\MyArchitect.Utils.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\MyArchitect.Utils.pdb
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Utils\obj\Debug\net6.0\ref\MyArchitect.Utils.dll

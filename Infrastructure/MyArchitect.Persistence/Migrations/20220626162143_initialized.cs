@@ -1,11 +1,11 @@
-﻿using System;
+﻿
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace MyArchitect.Persistence.Migrations
 {
-    public partial class DbInitialized : Migration
+    public partial class initialized : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using MyArchitect.Abstraction.Repositories;
 using MyArchitect.Abstraction.Services;
 using MyArchitect.Domain.Entities;
@@ -12,11 +13,12 @@ namespace MyArchitect.Concrete.Services
     {
         private readonly IProductRepository _repository;
         private readonly IMapper _mapper;
-
-        public ProductService(IProductRepository repository, IMapper mapper)
+        private readonly IValidator<CreateProductDto> _validator;
+        public ProductService(IProductRepository repository, IMapper mapper, IValidator<CreateProductDto> validator)
         {
             _repository = repository;
             _mapper = mapper;
+            _validator = validator;
         }
 
         public async Task<IEnumerable<GetAllProductDto>> GetAllProductAsync()

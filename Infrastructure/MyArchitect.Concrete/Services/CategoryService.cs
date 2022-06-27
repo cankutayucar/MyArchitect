@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using FluentValidation;
+using FluentValidation.Results;
 using MyArchitect.Abstraction.Repositories;
 using MyArchitect.Abstraction.Services;
 using MyArchitect.Domain.Entities;
@@ -6,6 +8,7 @@ using MyArchitect.RequestResponseModels.Category.CreateCategory;
 using MyArchitect.RequestResponseModels.Category.GetAllCategories;
 using MyArchitect.RequestResponseModels.Category.GetCategoriesNameWithDescription;
 using MyArchitect.RequestResponseModels.Category.UpdateCategory;
+using MyArchitect.Utils;
 
 namespace MyArchitect.Concrete.Services
 {
@@ -13,10 +16,12 @@ namespace MyArchitect.Concrete.Services
     {
         private readonly ICategoryRepository _categoryRepository;
         private readonly IMapper _mapper;
-        public CategoryService(ICategoryRepository categoryRepository, IMapper mapper)
+        private readonly IValidator<CreateCategoryDto> _validator;
+        public CategoryService(ICategoryRepository categoryRepository, IMapper mapper, IValidator<CreateCategoryDto> validator)
         {
             _categoryRepository = categoryRepository;
             _mapper = mapper;
+            _validator = validator;
         }
 
         public async Task<IEnumerable<CategoryResponseDto>> GetAllCategoriesAsync()
@@ -38,6 +43,8 @@ namespace MyArchitect.Concrete.Services
 
         public async Task<int> CreateCategoryAsync(CreateCategoryDto dto)
         {
+            var result = await _validator.ValidateAsync(dto);
+            if (!result.IsValid) throw new Exception(result.Errors.ParsValidationErrors());
             return await _categoryRepository.InsertAsync(_mapper.Map<Category>(dto)) == true ? 1 : 0;
         }
 

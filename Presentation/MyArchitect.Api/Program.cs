@@ -1,3 +1,4 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using MyArchitect.Abstraction.Repositories;
 using MyArchitect.Abstraction.Services;
@@ -5,6 +6,8 @@ using MyArchitect.Concrete.Mappings;
 using MyArchitect.Concrete.Repositories;
 using MyArchitect.Concrete.Services;
 using MyArchitect.Persistence;
+using MyArchitect.Validators.Category;
+using MyArchitect.Validators.Product;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,12 +18,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<OnionContext>(opt => opt.UseSqlServer(
-    "Data Source=DESKTOP-5QUPQUE\\SQLEXPRESS;Initial Catalog=OnionArchitect;Integrated Security=true;"));
+    "Data Source=DESKTOP-M89CB47\\SQLEXPRESS;Initial Catalog=OnionArchitect;Integrated Security=true;"));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddAutoMapper(typeof(CategoryMapper), typeof(ProductMapper));
+builder.Services.AddValidatorsFromAssemblyContaining(typeof(CreateCategoryValidator));
 #endregion 
 
 

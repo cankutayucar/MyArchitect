@@ -27,6 +27,44 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "FluentValidation/11.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/11.1.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.1.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.1.0"
+        },
+        "compile": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.1.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.1.0",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -735,8 +773,10 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "FluentValidation": "11.1.0",
           "MyArchitect.Abstraction": "1.0.0",
-          "MyArchitect.Persistence": "1.0.0"
+          "MyArchitect.Persistence": "1.0.0",
+          "MyArchitect.Utils": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MyArchitect.Concrete.dll": {}
@@ -782,6 +822,34 @@
         "runtime": {
           "bin/placeholder/MyArchitect.RequestResponseModels.dll": {}
         }
+      },
+      "MyArchitect.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentValidation": "11.1.0"
+        },
+        "compile": {
+          "bin/placeholder/MyArchitect.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyArchitect.Utils.dll": {}
+        }
+      },
+      "MyArchitect.Validators/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentValidation": "11.1.0",
+          "FluentValidation.AspNetCore": "11.1.0",
+          "MyArchitect.RequestResponseModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyArchitect.Validators.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyArchitect.Validators.dll": {}
+        }
       }
     }
   },
@@ -813,6 +881,63 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "FluentValidation/11.1.0": {
+      "sha512": "Ld7w+2jOmnhQqFkngEGuEWTRa5j6u4Xzli7jKxRtbA5PtuHHcpin01qxvxYL0LomeJuzRMGAOURu2rKONdjKQA==",
+      "type": "package",
+      "path": "fluentvalidation/11.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.1.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/11.1.0": {
+      "sha512": "xfGXmEhjtWrFZhPvnd8vGY2o6TaCeSHE/K8zLLoXg36mhLUbYbuEs9YIa6dIeQPjGPgtQ8Rat50WuoNF9fa70A==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/11.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.11.1.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/net6.0/FluentValidation.AspNetCore.dll",
+        "lib/net6.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.1.0": {
+      "sha512": "M9U2hLZc8bx0JthQKsN9SVgQSHJeLMcSV/uCmJ23U+/7HCSeOYD4OXoF+p5U3bLGz6Yp7h0/0XbSL+Qv2S38EQ==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "Humanizer.Core/2.8.26": {
@@ -2157,38 +2282,50 @@
       "type": "project",
       "path": "../../Core/MyArchitect.RequestResponseModels/MyArchitect.RequestResponseModels.csproj",
       "msbuildProject": "../../Core/MyArchitect.RequestResponseModels/MyArchitect.RequestResponseModels.csproj"
+    },
+    "MyArchitect.Utils/1.0.0": {
+      "type": "project",
+      "path": "../../Core/MyArchitect.Utils/MyArchitect.Utils.csproj",
+      "msbuildProject": "../../Core/MyArchitect.Utils/MyArchitect.Utils.csproj"
+    },
+    "MyArchitect.Validators/1.0.0": {
+      "type": "project",
+      "path": "../../Core/MyArchitect.Validators/MyArchitect.Validators.csproj",
+      "msbuildProject": "../../Core/MyArchitect.Validators/MyArchitect.Validators.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FluentValidation >= 11.1.0",
+      "FluentValidation.AspNetCore >= 11.1.0",
       "Microsoft.EntityFrameworkCore >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "MyArchitect.Abstraction >= 1.0.0",
       "MyArchitect.Concrete >= 1.0.0",
       "MyArchitect.Persistence >= 1.0.0",
+      "MyArchitect.Validators >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CAN\\.nuget\\packages\\": {},
+    "C:\\Users\\Cankutay\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Presentation\\MyArchitect.Api\\MyArchitect.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Presentation\\MyArchitect.Api\\MyArchitect.Api.csproj",
       "projectName": "MyArchitect.Api",
-      "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Presentation\\MyArchitect.Api\\MyArchitect.Api.csproj",
-      "packagesPath": "C:\\Users\\CAN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Presentation\\MyArchitect.Api\\obj\\",
+      "projectPath": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Presentation\\MyArchitect.Api\\MyArchitect.Api.csproj",
+      "packagesPath": "C:\\Users\\Cankutay\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Presentation\\MyArchitect.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\CAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+        "C:\\Users\\Cankutay\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2196,7 +2333,6 @@
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -2204,14 +2340,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.Abstraction\\MyArchitect.Abstraction.csproj": {
-              "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Core\\MyArchitect.Abstraction\\MyArchitect.Abstraction.csproj"
+            "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Core\\MyArchitect.Abstraction\\MyArchitect.Abstraction.csproj": {
+              "projectPath": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Core\\MyArchitect.Abstraction\\MyArchitect.Abstraction.csproj"
             },
-            "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Infrastructure\\MyArchitect.Concrete\\MyArchitect.Concrete.csproj": {
-              "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Infrastructure\\MyArchitect.Concrete\\MyArchitect.Concrete.csproj"
+            "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Core\\MyArchitect.Validators\\MyArchitect.Validators.csproj": {
+              "projectPath": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Core\\MyArchitect.Validators\\MyArchitect.Validators.csproj"
             },
-            "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Infrastructure\\MyArchitect.Persistence\\MyArchitect.Persistence.csproj": {
-              "projectPath": "C:\\Users\\CAN\\Desktop\\OnionStructure\\MyArchitect\\Infrastructure\\MyArchitect.Persistence\\MyArchitect.Persistence.csproj"
+            "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Infrastructure\\MyArchitect.Concrete\\MyArchitect.Concrete.csproj": {
+              "projectPath": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Infrastructure\\MyArchitect.Concrete\\MyArchitect.Concrete.csproj"
+            },
+            "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Infrastructure\\MyArchitect.Persistence\\MyArchitect.Persistence.csproj": {
+              "projectPath": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Infrastructure\\MyArchitect.Persistence\\MyArchitect.Persistence.csproj"
             }
           }
         }
@@ -2226,6 +2365,14 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.1.0, )"
+          },
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "[11.1.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.5, )"
@@ -2263,7 +2410,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

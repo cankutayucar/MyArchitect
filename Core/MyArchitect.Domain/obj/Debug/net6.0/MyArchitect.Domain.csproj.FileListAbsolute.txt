@@ -10,3 +10,15 @@ C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Domain\obj\Debu
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\refint\MyArchitect.Domain.dll
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\MyArchitect.Domain.pdb
 C:\Users\CAN\Desktop\OnionStructure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\ref\MyArchitect.Domain.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\bin\Debug\net6.0\MyArchitect.Domain.deps.json
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\bin\Debug\net6.0\MyArchitect.Domain.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\bin\Debug\net6.0\MyArchitect.Domain.pdb
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\MyArchitect.Domain.csproj.AssemblyReference.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\MyArchitect.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\MyArchitect.Domain.AssemblyInfoInputs.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\MyArchitect.Domain.AssemblyInfo.cs
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\MyArchitect.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\MyArchitect.Domain.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\refint\MyArchitect.Domain.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\MyArchitect.Domain.pdb
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Domain\obj\Debug\net6.0\ref\MyArchitect.Domain.dll

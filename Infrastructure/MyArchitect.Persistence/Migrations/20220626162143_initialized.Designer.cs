@@ -12,8 +12,8 @@ using MyArchitect.Persistence;
 namespace MyArchitect.Persistence.Migrations
 {
     [DbContext(typeof(OnionContext))]
-    [Migration("20220612100840_DbInitialized")]
-    partial class DbInitialized
+    [Migration("20220626162143_initialized")]
+    partial class initialized
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

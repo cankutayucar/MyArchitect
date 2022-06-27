@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "f0NiStcIbXyIdOGekuTGL6p6imxuMD0Wb+eRsKkHIx7rNssHasNQtCQJ4mf/sGWDDaELgb8JGwvsAvcDY5/0nw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Cankutay\\Desktop\\Structure\\MyArchitect\\Core\\MyArchitect.Validators\\MyArchitect.Validators.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cankutay\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\Cankutay\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.0\\fluentvalidation.aspnetcore.11.1.0.nupkg.sha512",
+    "C:\\Users\\Cankutay\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
+    "C:\\Users\\Cankutay\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

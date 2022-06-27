@@ -1,0 +1,17 @@
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\bin\Debug\net6.0\MyArchitect.Validators.deps.json
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\bin\Debug\net6.0\MyArchitect.Validators.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\bin\Debug\net6.0\MyArchitect.Validators.pdb
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\bin\Debug\net6.0\MyArchitect.Domain.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\bin\Debug\net6.0\MyArchitect.RequestResponseModels.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\bin\Debug\net6.0\MyArchitect.RequestResponseModels.pdb
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\bin\Debug\net6.0\MyArchitect.Domain.pdb
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\MyArchitect.Validators.csproj.AssemblyReference.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\MyArchitect.Validators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\MyArchitect.Validators.AssemblyInfoInputs.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\MyArchitect.Validators.AssemblyInfo.cs
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\MyArchitect.Validators.csproj.CoreCompileInputs.cache
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\MyArchitect.Validators.csproj.CopyComplete
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\MyArchitect.Validators.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\refint\MyArchitect.Validators.dll
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\MyArchitect.Validators.pdb
+C:\Users\Cankutay\Desktop\Structure\MyArchitect\Core\MyArchitect.Validators\obj\Debug\net6.0\ref\MyArchitect.Validators.dll

@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\MyArchitect.Abstraction\MyArchitect.Abstraction.csproj" />
+    <ProjectReference Include="..\..\Core\MyArchitect.Utils\MyArchitect.Utils.csproj" />
     <ProjectReference Include="..\MyArchitect.Persistence\MyArchitect.Persistence.csproj" />
   </ItemGroup>
 
